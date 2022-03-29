@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.shakti">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.project.shakti.signupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.shakti.loginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.shakti.SosInsructionsActivity"
+            android:exported="true"
+            android:label="SOS Instructions"
+            android:parentActivityName="com.project.shakti.SmsActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.project.shakti.Instructions"
+            android:label="App Tour"
+            android:parentActivityName="com.project.shakti.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity android:name="com.project.shakti.webactivity" />
+        <activity
+            android:name="com.project.shakti.SmsActivity"
+            android:label="Emergency Service"
+            android:parentActivityName="com.project.shakti.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity android:name="com.project.shakti.CurrentLocation" />
+        <activity android:name="com.project.shakti.Flashing" />
+        <activity
+            android:name="com.project.shakti.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.shakti.MainActivity" />
+
+        <receiver
+            android:name="com.project.shakti.ScreenOnOffReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="number.action.string" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.project.shakti.ScreenOnOffBackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

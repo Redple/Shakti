@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75065496782",
+    "project_id": "shakti-1a1c4",
+    "storage_bucket": "shakti-1a1c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75065496782:android:ca06b7ddc6cdcd5c8d6c9f",
+        "android_client_info": {
+          "package_name": "com.teamDroiders.ladybuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75065496782-h51v2iv20j4nkbf586jgn2svh6tsn0k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9E5nUSOXLK4S3adZn8HDVjG5bwHlPsQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75065496782-h51v2iv20j4nkbf586jgn2svh6tsn0k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
